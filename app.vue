@@ -5,6 +5,7 @@
       <NuxtLink :to="{ name: 'events' }">Events</NuxtLink>
       <NuxtLink to="/events/profile">Profile</NuxtLink>
       <NuxtLink to="/custom">Custom</NuxtLink>
+      <NuxtLink to="/vueuse">Vueuse</NuxtLink>
     </header>
     <NuxtPage />
   </NuxtLayout>
