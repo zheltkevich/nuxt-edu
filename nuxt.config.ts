@@ -7,4 +7,9 @@ export default defineNuxtConfig({
     "@assets": resolve(__dirname, "/assets"),
   },
   css: ["@assets/main.scss"],
+  routeRules: {
+    "/": { prerender: true },
+    "*": { prerender: true },
+    "/old-page": { redirect: "/" },
+  },
 });

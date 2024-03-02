@@ -2,6 +2,10 @@
 const { sayHello } = useUtils();
 
 sayHello("index page");
+
+const { $sayHello } = useNuxtApp();
+
+$sayHello(235, "nuxt app");
 </script>
 
 <template>
