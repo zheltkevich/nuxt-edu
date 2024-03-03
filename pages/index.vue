@@ -1,4 +1,8 @@
 <script setup>
+import { useCounterStore } from "~/stores/myStore";
+
+const store = useCounterStore();
+console.log(store);
 const { sayHello } = useUtils();
 
 sayHello("index page");
@@ -13,6 +17,10 @@ $sayHello(235, "nuxt app");
     <Header />
     <Blocks.Alert />
     <Profile />
+    {{ store.count }}
+    <button @click="store.increment">Increment</button>
+    <button @click="store.decrement">Decrement</button>
+    <button @click="store.reset">Reset</button>
     <div>
       <h1>MAIN page</h1>
       <img class="img" src="@assets/1.png" alt="image from assets dir" />

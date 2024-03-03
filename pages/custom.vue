@@ -9,5 +9,7 @@ sayHello();
 </script>
 
 <template>
-  <div>CUSTOM PAGE</div>
+  <div>
+    <h1>CUSTOM PAGE</h1>
+  </div>
 </template>

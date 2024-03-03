@@ -12,4 +12,5 @@ export default defineNuxtConfig({
     "*": { prerender: true },
     "/old-page": { redirect: "/" },
   },
+  modules: ["@pinia/nuxt"],
 });
